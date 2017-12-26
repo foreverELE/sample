@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/','Admin\StaticPagesController@index');
-Route::get('/help','Admin\StaticPagesController@help');
-Route::get('/about','Admin\StaticPagesController@about');
+Route::get('/','Admin\StaticPagesController@index')->name('index');
+Route::get('/help','Admin\StaticPagesController@help')->name('help');
+Route::get('/about','Admin\StaticPagesController@about')->name('about');
+
+Route::get('/signup','Admin\UsersController@create')->name('signup');
