@@ -13,3 +13,4 @@ class UsersController extends Controller
         return view('admin.users.create');
     }
 }
+
