@@ -8,6 +8,7 @@
 
 @include('admin.layouts._header')
 <div class="container">
+    @include('admin.shared._messages')
     @yield('content')
     @include('admin.layouts._footer')
 </div>
